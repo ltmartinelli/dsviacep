@@ -27,49 +27,41 @@
                 <form name="newAddress">
                     <div class="form-control">
                         <label for="cep">CEP:</label>
-                        <input name="text" id="cep" type="text" placeholder="CEP">
+                        <input name="text" id="cep" class="form-input" type="text" placeholder="CEP">
+                        <div class="error-message">Campo requerido</div>
                     </div>
                     <div class="form-control">
                         <label for="street">Logradouro:</label>
-                        <input name="text" id="street" type="text" placeholder="Logradouro">
+                        <input name="text" id="street" class="form-input" type="text" placeholder="Logradouro" disabled>
                     </div>
                     <div class="form-control">
                         <label for="number">Número:</label>
-                        <input name="text" id="number" type="text" placeholder="Número">
+                        <input name="text" id="number" class="form-input" type="text" placeholder="Número">
+                        <div class="error-message">Campo requerido</div>
                     </div>
                     <div class="form-control">
                         <label for="city">Cidade:</label>
-                        <input name="text" id="city" type="text" placeholder="Cidade">
+                        <input name="text" id="city" class="form-input" type="text" placeholder="Cidade" disabled>
                     </div>
 
-                    <div>
-                        <button type="submit">Salvar</button>
-                        <button>Limpar</button>
+                    <div class="btn-container">
+                        <button type="submit" class="btn">Salvar</button>
+                        <button class="btn">Limpar</button>
                     </div>
                 </form>
             </div>
         </section>
 
-        <section id="list-section">
-            <div>
+        <section id="list-section" class="list-container">
+            <div class="card-list-item">
                 <h3>São Paulo</h3>
-                <p>Rua dos Jardins</p>
-                <p>11200-345</p>
+                <p class="address-line">Rua dos Jardins</p>
+                <p class="address-cep">11200-345</p>
             </div>
-            <div>
+            <div class="card-list-item">
                 <h3>São Paulo</h3>
-                <p>Rua dos Jardins</p>
-                <p>11200-345</p>
-            </div>
-            <div>
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins</p>
-                <p>11200-345</p>
-            </div>
-            <div>
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins</p>
-                <p>11200-345</p>
+                <p class="address-line">Rua dos Jardins</p>
+                <p class="address-cep">11200-345</p>
             </div>
         </section>
     </main>
