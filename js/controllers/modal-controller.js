@@ -32,7 +32,7 @@ function handleBtnCloseClick(event)
 
 function handleContainerClick(event)
 {
-    event.preventDefault();
+    event.target.preventDefault();
     if (event.target === this)
     {
         closeModal();
